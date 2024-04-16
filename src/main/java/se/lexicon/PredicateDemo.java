@@ -6,6 +6,9 @@ import java.util.function.Predicate;
 
 public class PredicateDemo {
 
+    static Predicate<Integer> isGreaterThan18 = n -> n > 18;
+
+
     // Use Case for Predicate Interface is to :
     // Filtering elements in condition
     // Selecting elements from a stream or sequence of data that meet the specific condition
@@ -18,7 +21,6 @@ public class PredicateDemo {
 
 
         Predicate<Integer> isEven = number -> number % 2 == 0;
-        Predicate<Integer> isGreaterThan18 = n -> n > 18;
         Predicate<Integer> isPositive = n -> n > 0;
         filterNumbers(numbers, isEven);
         filterNumbers(numbers, isPositive);
